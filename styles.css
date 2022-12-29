@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+  
+}
+body {
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+h1 {
+  font-size: 3.5em;
+}
+h2 {
+  font-size: 2.7em;
+}
+h3 {
+  font-size: 2em;
+}
+p {
+  font-size: 1.25em;
+}
+.benefits_container__items {
+  list-style: none;
+}
+
+button {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px 40px;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0, 5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0, 5);
+  color: white;
+  background-color: darkgreen;
+}
+button:hover {
+  background-color: rgb(8, 161, 8);
+}
+.color_change {
+  color: darkgreen;
+}
+.benefits_container__links {
+  font-size: 1.25em;
+}
+
+.header_container {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.huertas_container {
+  max-width: 1400px;
+  margin: auto;
+}
+header {
+  background-color: rgb(245, 245, 245);
+}
+.header_container__logo {
+  margin: 0;
+  padding: 25px 30px;
+  font-weight: bold;
+  color: darkgreen;
+  font-size: 2em;
+}
+.header_container__menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+}
+.header_container__menu a {
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+.header_container__menu a:hover {
+  color: rgb(8, 161, 8);
+}
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("assets/images/huerta-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#hero h1 {
+  color: white;
+}
+.para_que__container {
+  text-align: center;
+  padding: 200px 12px;
+}
+#tipos-de-huertas {
+  background-color: rgb(245, 245, 245);
+}
+.huertas_container {
+  text-align: center;
+  padding: 150px 12px;
+}
+
+.huertas_container h2 {
+  margin-top: 0;
+  font-size: 50px;
+}
+
+.huertas_container p {
+  display: none;
+}
+.huertas_container h3 {
+  color: white;
+  padding-top: 30px;
+  height: 20vh;
+  font-size: 40px;
+  margin-top: 40px;
+}
+
+.huertas_item1 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("assets/images/huerta-vertical.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.huertas_item2 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("assets/images/huerta-en-cajones.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.huertas_item3 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("assets/images/huerta-con-palet.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.huertas_item4 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("assets/images/huerta-en-macetas.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.huertas_item5 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("assets/images/huerta-colgante.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.huertas_item6 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("assets/images/huerta-hidroponica.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.huertas_container button {
+  margin-bottom: 30px;
+}
+.benefits_container {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+.benefits_container__items {
+  display: block;
+  text-align: center;
+}
+
+.footer_container {
+  background-color: rgb(245, 245, 245);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.footer_container p {
+  font-size: 1em;
+}
+
+@media (min-width: 720px) {
+   header {
+    position: fixed;
+    width: 100%;
+   }
+  .header_container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .header_container__menu {
+    flex-direction: row;
+    padding-bottom: 0;
+  }
+
+  .para_que__container{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .para_que__img {
+    background-image: url("assets/images/walle-plant.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+  }
+  .para_que__text {
+     width: 50%;
+     text-align: initial;
+     padding-left: 30px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+  }
+  .para_que__text h2 {
+    margin-top: 0px;
+  }
+  
+}
